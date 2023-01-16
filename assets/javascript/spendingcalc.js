@@ -34,7 +34,7 @@ document.getElementById("btn csgo-spin").addEventListener("click", spin);
 //spin function
 function spin (){
     // generate one random number from 4000
-    var randomNumber = Math.floor(Math.random() * 4001);
+    let randomNumber = Math.floor(Math.random() * 4001);
         if(randomNumber <= 3218){
             milSpec ++;
         }
@@ -54,4 +54,15 @@ function spin (){
     spending +=2;
 
     renderStats();
+}
+
+document.getElementById("btn csgo-auto-spin").addEventListener("click", autoSpin);
+
+//auto spin until rare Item
+function autoSpin(){
+    let randomNumber = Math.floor(Math.random() * 4001);
+        do{
+            spin();
+        }
+        while (exceedinglyRare === 0);
 }

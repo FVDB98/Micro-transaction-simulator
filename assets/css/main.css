@@ -30,8 +30,7 @@ body{
 
 .spin{
     display: flex;
-    justify-content: center; 
-    
+    justify-content: space-evenly; 
 }
 
 button{
@@ -44,7 +43,7 @@ button{
     box-sizing: border-box;
     color: #FFFFFF;
     font-family: Phantomsans, sans-serif;
-    font-size: 20px;
+    font-size:16px;
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
@@ -61,6 +60,8 @@ button{
 .csgo-stats{
     display: flex;
     justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .csgo-stats p{
