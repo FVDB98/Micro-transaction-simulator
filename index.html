@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Micro-Transaction Reality Checker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section class="title">
+                <h1>Micro-Transaction Spending Simulator</h1>
+                <p>Don't waste your money. See the reality of Micro-Transaction spending</p>
+            </section>
+
+            <section class="csgo-section">
+                <article class="csgo-title">
+                    <h1>CSGO Case Simulator:</h1>
+                </article>
+                <div class="spin">
+                    <button id="btn csgo-spin">Burn £2!</button>
+                </div>
+                <section class="csgo-stats" id="play">
+                    <p>Cases opened: <span id="spins"> </span></p>
+                    <p>Money spent: £<span id="spending"></span></p>
+                </section>
+                <section class="csgo-items">
+                    <p> <strong>Mil-spec</strong> (Probability: 80.4%): <span id="milSpec"></span></p>
+                    <p> <strong>Restricted</strong> (Probability: 15.6%):  <span id="restricted"></span></p>
+                    <p> <strong>Classified</strong> (Probability: 2.83%): <span id="classified"></span></p>
+                    <p> <strong>Covert</strong> (Probability: 0.83%): <span id="covert"></span></p>
+                    <p> <strong>Special Item</strong> (Probability: 0.3%): <span id="exceedinglyRare"></span></p>
+                </section>
+            </section>
+        </main>
+    </body>
+    <script src="assets/javascript/spendingcalc.js"></script>
+</html>
