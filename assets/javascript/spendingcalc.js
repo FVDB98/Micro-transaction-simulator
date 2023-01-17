@@ -69,7 +69,7 @@ function autoSpin(){
 }
 
 function rareItemAlert (){
-    if(exceedinglyRare ++){
+    if(exceedinglyRare === 1){
         alert(`Congrats! You managed to uncase a special Item. This would have cost you: £${spending}`);
     }
 }
