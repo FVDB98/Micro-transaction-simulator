@@ -28,8 +28,11 @@ function renderStats(){
 //call render when page loads
 renderStats();
 
-//add event listener to spint button
+//Event listener to spin button
 document.getElementById("btn csgo-spin").addEventListener("click", spin);
+
+//Event listener to auto calculate button
+document.getElementById("btn csgo-auto-spin").addEventListener("click", autoSpin);
 
 //spin function
 function spin (){
@@ -49,7 +52,7 @@ function spin (){
         }
         else{
             exceedinglyRare ++;
-            rareItemAlert();
+            congratsMessage();
         }
     spins++;
     spending +=2;
@@ -57,9 +60,7 @@ function spin (){
     renderStats();
 }
 
-document.getElementById("btn csgo-auto-spin").addEventListener("click", autoSpin);
-
-//auto spin until rare Item
+//auto spin until unlocks a Special / Exceedingly Rare Item
 function autoSpin(){
     let randomNumber = Math.floor(Math.random() * 4001);
         do{
@@ -68,8 +69,8 @@ function autoSpin(){
         while (exceedinglyRare === 0);
 }
 
-function rareItemAlert (){
-    if(exceedinglyRare === 1){
-        alert(`Congrats! You managed to uncase a special Item. This would have cost you: £${spending}`);
-    }
+//Message for when one unlocks a Special / Exceedingly Rare Item
+function congratsMessage(){
+    const congratsMessage = document.getElementById("message");
+        congratsMessage.textContent += `Hooray! You managed to uncase a Special Item. You would have had to open: ${spins + 1} cases and spend £${spending + 2}.`; 
 }

@@ -1,6 +1,10 @@
 body{
     margin: 0;
-    font-family: "Quicksand";
+    font-family: "Cabin";
+}
+
+.container{
+    background-color: honeydew;
 }
 
 .title{
@@ -42,7 +46,7 @@ button{
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
     color: #FFFFFF;
-    font-family: Phantomsans, sans-serif;
+    font-family: "Cabin";
     font-size:16px;
     justify-content: center;
     line-height: 1em;
@@ -57,11 +61,18 @@ button{
 
 }
 
+#message{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
 .csgo-stats{
     display: flex;
     justify-content: space-evenly;
     font-size: 18px;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .csgo-stats p{
@@ -72,6 +83,10 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.probability{
+    font-style: italic;
 }
 
 .csgo-items p{
