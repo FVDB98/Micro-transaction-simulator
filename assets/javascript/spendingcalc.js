@@ -49,6 +49,7 @@ function spin (){
         }
         else{
             exceedinglyRare ++;
+            rareItemAlert();
         }
     spins++;
     spending +=2;
@@ -65,4 +66,10 @@ function autoSpin(){
             spin();
         }
         while (exceedinglyRare === 0);
+}
+
+function rareItemAlert (){
+    if(exceedinglyRare ++){
+        alert(`Congrats! You managed to uncase a special Item. This would have cost you: £${spending}`);
+    }
 }
