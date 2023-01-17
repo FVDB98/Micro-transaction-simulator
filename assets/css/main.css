@@ -32,6 +32,15 @@ body{
     text-align: center;
 }
 
+.csgo-title h1{
+    margin-bottom: 0;
+}
+
+.csgo-title p{
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
 .spin{
     display: flex;
     justify-content: space-evenly; 
