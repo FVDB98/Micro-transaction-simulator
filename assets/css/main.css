@@ -17,10 +17,6 @@ body{
     margin: 0px;
 }
 
-.title p{
-
-}
-
 .csgo-section{
     display: flex;
     flex-direction: column; 
@@ -64,14 +60,6 @@ button{
     padding: 3px;
     cursor: pointer;
     touch-action: manipulation;
-}
-
-.csgo-spin{
-
-}
-
-.congrats-container{
-
 }
 
 #message{
@@ -120,39 +108,8 @@ button{
     font-style: italic;
 }
 
-.csgo-items p{
-
-}
-
-#spins{
-
-}
-
-#spending{
-
-}
-
-#milSpec{
-
-}
-
-#restricted{
-
-}
-
-#classified{
-
-}
-
-#covert{
-
-}
-
-#exceedinglyRare{
-    
-}
-
 .version-container{
     display: flex;
     justify-content: center;
+    text-decoration: underline;
 }

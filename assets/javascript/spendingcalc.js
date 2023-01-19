@@ -55,7 +55,6 @@ function spin (){
             exceedinglyRare ++;
             congratsMessage();
             knivesRoll();
-            // specialItems();
         }
     spins++;
     spending +=2;
@@ -65,11 +64,11 @@ function spin (){
 
 //auto spin until unlocks a Special / Exceedingly Rare Item
 function autoSpin(){
-    let randomNumber = Math.floor(Math.random() * 4001);
-        do{
-            spin();
-        }
-        while (exceedinglyRare === 0);
+    // let randomNumber = Math.floor(Math.random() * 4001);
+    do{
+        spin();
+    }
+    while (exceedinglyRare === 0);
 }
 
 //Message for when one unlocks a Special / Exceedingly Rare Item
@@ -77,7 +76,6 @@ function congratsMessage(){
     const congratsMessage = document.getElementById("message");
         congratsMessage.textContent += `Hooray! You managed to uncase a Special Item. You would have had to open: ${spins + 1} cases and spend £${spending + 2}.`; 
 }
-
 
 //function for knives
 function knivesRoll(){
@@ -105,7 +103,7 @@ function knivesRoll(){
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
                             const itemQuality = document.getElementById("quality-type");
-                            itemQuality.textContent += `Quality: ${qualityType}`;           
+                            itemQuality.textContent += `Quality: ${qualityType}`;        
         }
         else if(knifeType === "Butterfly Knife"){
             let skinType = butterflyKnifeSkins[Math.floor(Math.random() * butterflyKnifeSkins.length)];
@@ -117,7 +115,7 @@ function knivesRoll(){
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
                             const itemQuality = document.getElementById("quality-type");
-                            itemQuality.textContent += `Quality: ${qualityType}`;           
+                            itemQuality.textContent += `Quality: ${qualityType}`;        
         }
         else if(knifeType === "Falchion Knife"){
             let skinType = falchionKnifeSkins[Math.floor(Math.random() * falchionKnifeSkins.length)];
