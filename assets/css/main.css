@@ -70,10 +70,32 @@ button{
 
 }
 
+.congrats-container{
+
+}
+
 #message{
     text-align: center;
     font-weight: bold;
-    padding: 10px;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#item-type{
+    margin: 0;
+}
+
+#skin-type{
+    margin: 0;
+}
+
+#quality-type{
+    margin: 0;
 }
 
 .csgo-stats{
@@ -128,4 +150,9 @@ button{
 
 #exceedinglyRare{
     
+}
+
+.version-container{
+    display: flex;
+    justify-content: center;
 }
