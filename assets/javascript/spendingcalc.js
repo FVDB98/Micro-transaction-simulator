@@ -34,7 +34,6 @@ document.getElementById("btn csgo-spin").addEventListener("click", spin);
 //Event listener to auto calculate button
 document.getElementById("btn csgo-auto-spin").addEventListener("click", autoSpin);
 
-
 //spin function
 function spin (){
     // generate one random number from 4000
@@ -77,223 +76,332 @@ function congratsMessage(){
         congratsMessage.textContent += `Hooray! You managed to uncase a Special Item. You would have had to open: ${spins + 1} cases and spend £${spending + 2}.`; 
 }
 
-//function for knives
+//function for knives randomisation
 function knivesRoll(){
+    //Choose Knife Type
     let knifeType = knifeItems[Math.floor(Math.random() * knifeItems.length)];
     console.log(knifeType);
+        // Roll 1 = Bayonet
         if(knifeType === "Bayonet"){
+            // Randomise Bayonet Knife Skin from array
             let skinType = bayonetSkins[Math.floor(Math.random() * bayonetSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what Knife it is
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality 
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;
         }
+        // Roll 2 = Bowie Knife
         else if(knifeType === "Bowie Knife"){
+            // Randomise Bowie Knife skin from array
             let skinType = bowieKnifeSkins[Math.floor(Math.random() * bowieKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            //Display the quality 
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;        
         }
+        // Roll 3 = Butterfly Knife
         else if(knifeType === "Butterfly Knife"){
+            // Randomise Butterfly Knife skin from array
             let skinType = butterflyKnifeSkins[Math.floor(Math.random() * butterflyKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;        
         }
+        // Roll 4 = Falchion Knife
         else if(knifeType === "Falchion Knife"){
+            // Randomise Falchion knife skin from array
             let skinType = falchionKnifeSkins[Math.floor(Math.random() * falchionKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        //Display what skin it has
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality 
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 5 = Flip Knife
         else if(knifeType === "Flip Knife"){
+            // Randomise Falchion knife skin from array
             let skinType = flipKnifeSkins[Math.floor(Math.random() * flipKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality 
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 6 = Gut Knife
         else if(knifeType === "Gut Knife"){
+            // Randomise Gut Knife skin from array
             let skinType = gutKnifeSkins[Math.floor(Math.random() * gutKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 7 = Huntsman knife
         else if(knifeType === "Hunstsman Knife"){
+            // Randomise Huntsman Knife skin from array
             let skinType = huntsmanKnifeSkins[Math.floor(Math.random() * huntsmanKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 8 = Karambit Knife
         else if(knifeType === "Karambit Knife"){
+            // Randomise Karambit Knife skin from array
             let skinType = karambitSkins[Math.floor(Math.random() * karambitSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 9 = M9 Bayonet
         else if(knifeType === "M9 Bayonet"){
+            // Randomise Bowie M9 Bayonet from array
             let skinType = m9BayonetSkins[Math.floor(Math.random() * m9BayonetSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 10 = Navaja Knife
         else if(knifeType === "Navaja Knife"){
+            // Randomise Navaja Knife skin from array
             let skinType = navajaKnifeSkins[Math.floor(Math.random() * navajaKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 11 = Nomad Knife
         else if(knifeType === "Nomad Knife"){
+            // Randomise Nomad Knife skin from array
             let skinType = nomadKnifeSkins[Math.floor(Math.random() * nomadKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 12 = Paracord Knife
         else if(knifeType === "Paracord Knife"){
+            // Randomise Paracord Knife skin from array
             let skinType = paracordKnifeSkins[Math.floor(Math.random() * paracordKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 13 = Shadow Daggers
         else if(knifeType === "Shadow Daggers"){
+            // Randomise Shadow Daggers skin from array
             let skinType = shadowDaggersSkins[Math.floor(Math.random() * shadowDaggersSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 14 = Skeleton Knife
         else if(knifeType === "Skeleton Knife"){
+            // Randomise Skeleton Knife skin from array
             let skinType = skeletonKnifeSkins[Math.floor(Math.random() * skeletonKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 15 = Stiletto Knife
         else if(knifeType === "Stiletto Knife"){
+            // Randomise Stiletto Knife skin from array
             let skinType = stilettoKnifeSkins[Math.floor(Math.random() * stilettoKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 16 = Survival Knife
         else if(knifeType === "Survival Knife"){
+            // Randomise Survival Knife skin from array
             let skinType = survivalKnifeSkins[Math.floor(Math.random() * survivalKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
+        // Roll 17 = Talon Knie
         else if(knifeType === "Talon Knife"){
+            // Randomise Talon Knife skin from array
             let skinType = talonKnifeSkins[Math.floor(Math.random() * talonKnifeSkins.length)];
             console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         } 
+        // Roll 18 = Ursus Knife
         else{
+            // Randomise Ursus Knife skin from array
             let skinType = ursusKnifeSkins[Math.floor(Math.random() * ursusKnifeSkins.length)];
-            console.log(skinType)
+            console.log(skinType);
+                // Randomise the skin quality from array
                 let qualityType = quality[Math.floor(Math.random() * quality.length)];
                 console.log(qualityType);
+                    // Display what knife it is 
                     const itemDetails = document.getElementById("item-type");
                     itemDetails.textContent += `Item: ${knifeType}`;
+                        // Display what skin it has 
                         const itemSkin = document.getElementById("skin-type");
                         itemSkin.textContent += `Skin: ${skinType}`;
+                            // Display the quality
                             const itemQuality = document.getElementById("quality-type");
                             itemQuality.textContent += `Quality: ${qualityType}`;           
         }
